@@ -1,0 +1,19 @@
+div:has(div#plasmo-shadow-container),
+div:has(div#automa-palette) {
+    display: none;
+}
+main#container {
+    display: flex;
+    flex-wrap: wrap;
+}
+section#bodyContainer {
+    display: block;
+    position: fixed;
+    margin: 8px;
+    width: 400px;
+    height: 300px;
+}
+code#codeContainer {
+    display: block;
+    width: 400px;
+}

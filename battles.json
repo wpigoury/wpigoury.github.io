@@ -1,0 +1,110 @@
+{
+    "baseUrl": "https://cssbattle.dev/battle/#",
+    "list": [
+        {
+            "id": 1,
+            "title": "Pilot Battle",
+            "targets": "1-12"
+        },
+        {
+            "id": 2,
+            "title": "Visibility",
+            "targets": "13-18"
+        },
+        {
+            "id": 3,
+            "title": "Cursor",
+            "targets": "19-20"
+        },
+        {
+            "id": 4,
+            "title": "Display",
+            "targets": "21-28"
+        },
+        {
+            "id": 5,
+            "title": "Inline",
+            "targets": "29-30"
+        },
+        {
+            "id": 6,
+            "title": "Conic",
+            "targets": "31-32"
+        },
+        {
+            "id": 7,
+            "title": "Backface",
+            "targets": "33-41"
+        },
+        {
+            "id": 8,
+            "title": "Transition",
+            "targets": "42-44"
+        },
+        {
+            "id": 9,
+            "title": "Margin",
+            "targets": "45-46"
+        },
+        {
+            "id": 10,
+            "title": "Block",
+            "targets": "47-52"
+        },
+        {
+            "id": 11,
+            "title": "Overflow",
+            "targets": "53-60"
+        },
+        {
+            "id": 12,
+            "title": "Blend",
+            "targets": "61-68"
+        },
+        {
+            "id": 13,
+            "title": "Clip",
+            "targets": "69-76"
+        },
+        {
+            "id": 14,
+            "title": "ZIndex",
+            "targets": "77-80"
+        },
+        {
+            "id": 15,
+            "title": "Filter",
+            "targets": "81-88"
+        },
+        {
+            "id": 16,
+            "title": "Aspect",
+            "targets": "89-96"
+        },
+        {
+            "id": 17,
+            "title": "Christmas 🎄",
+            "targets": "97-100"
+        },
+        {
+            "id": 18,
+            "title": "Float",
+            "targets": "101-108"
+        },
+        {
+            "id": 19,
+            "title": "Spacing",
+            "targets": "109-116"
+        },
+        {
+            "id": 20,
+            "title": "Hover",
+            "targets": "117-124"
+        },
+        {
+            "id": 21,
+            "title": "Rotate",
+            "targets": "125-132"
+        }
+    ]
+}
