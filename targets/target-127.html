@@ -1,0 +1,56 @@
+<div y y1></div>
+<div y y2></div>
+<div y y3 c></div>
+<div y y4 c></div>
+<div h></div>
+<style>
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background: #E3516E;
+    display: flex;
+    justify-content: center;
+  }
+  div {
+    position: absolute;
+  }
+  [y] {
+    background: #FADE8B;
+  }
+  [y1] {
+    width: 50px;
+    height: 160px;
+    top: 70px;
+  }
+  [y2] {
+    width: 100px;
+    height: 30px;
+    border-radius: 30px;
+    top: 70px;
+    -webkit-box-reflect: below 100px;
+  }
+  [c] {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+  }
+  [y3] {
+    top: 70px;
+    margin-left: 150px;
+  }
+  [y4] {
+    bottom: 70px;
+    margin-right: 150px;
+  }
+  [h] {
+    width: 30px;
+    height: 100px;
+    background: #E3516E;
+    top: 100px;
+    margin-left: -60px;
+    border-radius: 10px;
+    -webkit-box-reflect: right 30px;
+  }
+</style>

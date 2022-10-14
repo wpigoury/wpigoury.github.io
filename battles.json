@@ -1,5 +1,6 @@
 {
     "baseUrl": "https://cssbattle.dev/battle/#",
+    "unmetTargets": [66, 72, 79, 96, 103, 131],
     "list": [
         {
             "id": 1,
@@ -1127,8 +1128,8 @@
                     "id": 124,
                     "title": "Space Invaders",
                     "achievements": {
-                        "match": "-",
-                        "score": "-"
+                        "match": "100%",
+                        "score": "600 (1616 chars)"
                     }
                 }
             ]
@@ -1158,24 +1159,24 @@
                     "id": 127,
                     "title": "Letter I",
                     "achievements": {
-                        "match": "-",
-                        "score": "-"
+                        "match": "100%",
+                        "score": "600.11 (859 chars)"
                     }
                 },
                 {
                     "id": 128,
                     "title": "Letter N",
                     "achievements": {
-                        "match": "-",
-                        "score": "-"
+                        "match": "100%",
+                        "score": "604.01 (483 chars)"
                     }
                 },
                 {
                     "id": 129,
                     "title": "Letter B",
                     "achievements": {
-                        "match": "-",
-                        "score": "-"
+                        "match": "100%",
+                        "score": "602.84 (519 chars)"
                     }
                 },
                 {
@@ -1190,16 +1191,16 @@
                     "id": 131,
                     "title": "Letter W",
                     "achievements": {
-                        "match": "-",
-                        "score": "-"
+                        "match": "99.9%",
+                        "score": "596.82 (688 chars)"
                     }
                 },
                 {
                     "id": 132,
                     "title": "Letter S",
                     "achievements": {
-                        "match": "-",
-                        "score": "-"
+                        "match": "100%",
+                        "score": "600.01 (1151 chars)"
                     }
                 }
             ]

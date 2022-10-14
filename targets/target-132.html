@@ -1,0 +1,76 @@
+<div b></div>
+<div w></div>
+<div wc></div>
+<div ww></div>
+<style>
+  body {
+    margin: 0;
+    background: #4F77FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  :after, :before {
+    content: '';
+    position: absolute;
+    border-radius: 10px;
+  }
+  div {
+    position: absolute;
+  }
+  [b] {
+    width: 280px;
+    height: 200px;
+  }
+  [b]:before {
+    width: 240px;
+    height: 50px;
+    background: #1038BF;
+    right: 0;
+  }
+  [b]:after {
+    width: 240px;
+    height: 50px;
+    background: #1038BF;
+    bottom: 0;
+  }
+  [w] {
+    width: 240px;
+    height: 160px;
+  }
+  [w]:before {
+    width: 240px;
+    height: 50px;
+    background: white;
+  }
+  [w]:after {
+    width: 240px;
+    height: 50px;
+    background: white;
+    bottom: 0;
+  }
+  [ww] {
+    width: 240px;
+    height: 100px;
+
+  }
+  [ww]:before {
+    width: 20px;
+    height: 60px;
+    background: white;
+    border-radius: 0 0 0 10px;
+  }
+  [ww]:after {
+    width: 20px;
+    height: 60px;
+    background: white;
+    border-radius: 0 10px 0 0;
+    right: 0;
+    bottom: 0;
+  }
+  [wc] {
+    width: 200px;
+    height: 20px;
+    background: white;
+  }
+</style>

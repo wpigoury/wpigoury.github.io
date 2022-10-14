@@ -1,0 +1,81 @@
+<div ships>
+    <div s></div>
+    <div s></div>
+    <div s></div>
+    <div s></div>
+    <div s y></div>
+    <div s h></div>
+    <div s y></div>
+    <div s y></div>
+  </div>
+  <div c></div>
+  <div l></div>
+  <style>
+    * {
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background: #071945;
+    }
+    :after, :before {
+      content: '';
+      position: absolute;
+      width: 70px;
+      height: 10px;
+    }
+    [ships] {
+      width: 340px;
+      height: 70px;
+      margin-top: 40px;
+      margin-left: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    [s] {
+      position: relative;
+      width: 70px;
+      height: 20px;
+      margin-bottom: 10px;
+      --color: #B069F7;
+    }
+    [s]:before {
+      background: repeating-linear-gradient(90deg, #071945, #071945 10px, var(--color) 10px, var(--color) 60px, #071945 60px, #071945);
+    }
+    [s]:after {
+      background: repeating-linear-gradient(90deg, var(--color), var(--color) 10px, #071945 10px, #071945 60px, var(--color) 60px, var(--color));
+      top: 10px;
+    }
+    [h] {
+      visibility: hidden;
+    }
+    [y] {
+      --color: #F8DA37;
+    }
+    [c] {
+      position: absolute;
+      width: 40px;
+      border-right: 21px solid transparent;
+      border-left: 21px solid transparent;
+      border-bottom: 21px solid #2CE1EA;
+      bottom: 0;
+      margin-left: 50%;
+      translate: -50%;
+    }
+    [l] {
+      position: absolute;
+      width: 10px;
+      height: 70px;
+      background: repeating-linear-gradient(#2CE1EA, #2CE1EA 10px, #071945 10px, #071945 30px);
+      bottom: 20px;
+      margin-left: 50%;
+      translate: -50%;
+    }
+    [l]:after {
+      width: 10px;
+      height: 10px;
+      bottom: -10px;
+      background: #2CE1EA;
+    }
+  </style>
