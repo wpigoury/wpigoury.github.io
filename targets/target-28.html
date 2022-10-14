@@ -1,0 +1,41 @@
+<div cont>
+    <div c class="c1"></div>
+    <div r class="r2"></div>
+    <div r class="r1"></div>
+    <div c class="c2"></div>
+    <div r class="r3"></div>
+    <div c class="c1"></div>
+    <div c class="c2"></div>
+    <div r class="r4"></div>
+  </div>
+  <style>
+    body {
+      margin: 0;
+      background: #1A4341;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    div[cont] {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 20px;
+    }
+    div[cont] div {
+      width: 50px;
+      height: 50px;
+      background: #998235;
+    }
+    div[c] {
+      border-radius: 50%;
+    }
+    div[r] {
+      border-radius: 50px 50px 0 0;
+    }
+    div[r].r2, div[c].c2, div[r].r3 {
+      background: #F3AC3C;
+    }
+    div[r].r3, div[r].r4 {
+      border-radius: 0 0 50px 50px;
+    }
+  </style>

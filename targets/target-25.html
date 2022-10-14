@@ -1,0 +1,43 @@
+<div lb class="l1"></div>
+<div lb class="l2"></div>
+<div ls class="l1"></div>
+<div ls class="l2"></div>
+<style>
+  body {
+    margin: 0;
+    background: #998235;
+  }
+  div {
+    position: fixed;
+  }
+  div[lb] {
+    width: 80px;
+    height: 100px;
+    background: #1A4341;
+  }
+  div[lb].l1 {
+    top: 60px;
+    left: 110px;
+    border-radius: 0 50px 0 50px;
+  }
+  div[lb].l2 {
+    bottom: 60px;
+    right: 110px;
+    border-radius: 50px 0 50px 0;
+  }
+  div[ls] {
+    width: 80px;
+    height: 60px;
+    background: #F3AC3C;
+  }
+  div[ls].l1 {
+    border-radius: 50px 0 50px 0;
+    top: 60px;
+    right: 110px;
+  }
+  div[ls].l2 {
+    border-radius: 0 50px 0 50px;
+    bottom: 60px;
+    left: 110px;
+  }
+</style>

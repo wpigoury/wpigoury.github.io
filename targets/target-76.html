@@ -1,0 +1,49 @@
+<div w></div>
+<div b><p><p><p></div>
+<div e></div>
+<style>
+  body {
+    margin: 0;
+    background: #998235;
+  }
+  div, p {
+    position: absolute;
+    box-sizing: border-box;
+  }
+  [w] {
+    width: 75px;
+    height: 75px;
+    background: white;
+    border-radius: 75px 75px 0 75px;
+    top: 75px;
+    left: 125px;
+    -webkit-box-reflect: right 0;
+  }
+  [b] {
+    width: 150px;
+    height: 75px;
+    border-radius: 75px;
+    background: #EFF33C;
+    top: 150px;
+    left: 125px;
+    overflow: hidden;
+  }
+  [b]>p {
+    width: 25px;
+    height: 75px;
+    background: #191919;
+    top: -16px;
+  }
+  [b]>p:nth-child(2) {
+    left: 35px;
+  }
+  [b]>p:last-child {
+    left: 70px;
+  }
+  [e] {
+    border: 7.5px solid #191919;
+    border-radius: 50%;
+    top: 170px;
+    left: 240px;
+  }
+</style>

@@ -1,0 +1,59 @@
+<div c c1></div>
+<div c c2></div>
+<div e e1></div>
+<div e e2></div>
+<div r r1></div>
+<div r r2></div>
+<style>
+  body {
+    margin: 0;
+    background: #6592CF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div {
+    position: fixed;
+  }
+  [c] {
+    width: 120px;
+    height: 242px;
+    background: #243D83;
+  }
+  [c][c1] {
+    top: 30px;
+    left: 89px;
+    border-radius: 0 60px 60px 0;
+  }
+  [c][c2] {
+    top: 30px;
+    right: 89px;
+    border-radius: 60px 0 0 60px;
+  }
+  [e] {
+    width: 120px;
+    height: 182px;
+    background: #6592CF;
+  }
+  [e][e1] {
+    top: 60px;
+    left: 65px;
+    border-radius: 0 40px 40px 0;
+  }
+  [e][e2] {
+    top: 60px;
+    right: 65px;
+    border-radius: 40px 0 0 40px;
+  }
+  [r] {
+    width: 145px;
+    height: 100%;
+    background: #6592CF;
+    }
+  [r][r1] {
+    left: 0;
+  }
+  [r][r2] {
+    right: 0;
+  }
+</style>

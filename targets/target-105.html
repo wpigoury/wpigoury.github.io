@@ -1,0 +1,69 @@
+<div f></div>
+<div e e1></div>
+<div e e2></div>
+<div p p1><p><p></div>
+<div p p2><p><p></div>
+<style>
+  body {
+    margin: 0;
+    background: #BAC7CE;
+    display: flex;
+    justify-content: center;
+  }
+  div, p {
+    margin: 0;
+    position: absolute;
+    box-sizing: border-box;
+  }
+  [f] {
+    border-left: 91px solid transparent;
+    border-right: 91px solid transparent;
+    border-top: 91px solid #475862;
+  }
+  [e] {
+    width: 120px;
+    height: 120px;
+    background: black;
+    border-radius: 0 60px;
+    top: 130px;
+  }
+  [e1] {
+    rotate: -15deg;
+    left: 30px;
+  }
+  [e2] {
+    rotate: 105deg;
+    right: 30px;
+  }
+  [p] {
+    width: 100px;
+    height: 100px;
+    background: #5A6042;
+    border-radius: 50%;
+    top: 140px;
+    overflow: hidden;
+  }
+  [p1] {
+    left: 40px;
+  }
+  [p2] {
+    right: 40px;
+  }
+  p:first-child {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #868A64;
+    top: 15px;
+  }
+  p:last-child {
+    width: 40px;
+    height: 40px;
+    background: #4E2B24;
+    border: 5px solid black;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+  }
+</style>

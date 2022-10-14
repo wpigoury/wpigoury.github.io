@@ -1,0 +1,46 @@
+<div d1></div>
+<div d2></div>
+<div d3></div>
+<div d4></div>
+<style>
+  body {
+    background: #191919;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div {
+    position: fixed;
+    width: 0;
+    height: 0;
+    border: 50px solid #F9E492;
+  }
+  [d1] {
+    border-radius: 50px 50px 0 0;
+    border-bottom: 0;
+    margin-left: -100px;
+    margin-top: -50px;
+  }
+  [d2] {
+    border-radius: 0 0 50px 50px;
+    border-bottom: 0;
+    margin-left: 100px;
+    margin-top: 50px;
+  }
+  [d3] {
+    border-radius: 50px 50px 0 0;
+    border-bottom: 0;
+    border-color: #4F77FF;
+    transform: rotate(90deg);
+    margin-top: -100px;
+    margin-left: 50px;
+  }
+  [d4] {
+    border-radius: 50px 50px 0 0;
+    border-bottom: 0;
+    border-color: #4F77FF;
+    transform: rotate(-90deg);
+    margin-top: 100px;
+    margin-left: -50px;
+  }
+</style>

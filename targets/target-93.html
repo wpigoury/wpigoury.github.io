@@ -1,0 +1,72 @@
+<div cont>
+    <div s></div>
+    <div b b1></div>
+    <div b b2></div>
+    <div b b3></div>
+    <div b r b1></div>
+    <div b r b2></div>
+    <div b r b3></div>
+    <div c></div>
+  </div>
+  <style>
+    body {
+      margin: 0;
+      background: #4F77FF;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    div {
+      position: absolute;
+    }
+    [cont] {
+      width: 200px;
+      height: 200px;
+      background: #191919;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+    [s] {
+      width: 40px;
+      height: 40px;
+      background: #F9E492;
+      border-radius: 50%;
+      top: 40px;
+      left: 40px;
+    }
+    [b] {
+      width: 100px;
+      height: 16px;
+      background: #F9E492;
+    }
+    [b1] {
+      bottom: 10px;
+    }
+    [b2] {
+      bottom: 36px;
+    }
+    [b3] {
+      bottom: 62px;
+    }
+    [r] {
+      width: 80px;
+      right: 0;
+    }
+    [r][b1] {
+      bottom: 23px;
+    }
+    [r][b2] {
+      bottom: 49px;
+    }
+    [r][b3] {
+      bottom: 75px;
+    }
+    [c] {
+      width: 20px;
+      height: 75px;
+      background: repeating-linear-gradient(#D6B73F, #D6B73F 16px, #191919 16px, #191919 26px);
+      top: 115px;
+      left: 100px;
+      transform: skewY(-33deg);
+    }
+  </style>

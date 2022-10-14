@@ -1,0 +1,70 @@
+<div o></div>
+<div o></div>
+<div b></div>
+<div b></div>
+<div b1></div>
+<div b1></div>
+<div c></div>
+<div c></div>
+<style>
+  body {
+    margin: 0;
+    background: #293462;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div {
+    position: fixed;
+  }
+  div[o] {
+    width: 150px;
+    height: 220px;
+    background: #FE5F55;
+    border-radius: 40px;
+    bottom: 0;
+  }
+  div[o]:nth-child(1) {
+    left: 50px;
+  }
+  div[o]:nth-child(2) {
+    right: 50px;
+  }
+  div[b] {
+    width: 150px;
+    height: 100%;
+    background: #293462;
+  }
+  div[b]:nth-child(3) {
+    left: 0;
+  }
+  div[b]:nth-child(4) {
+    right: 0;
+  }
+  div[b1] {
+    width: 150px;
+    height: 120px;
+    background: #293462;
+    border-radius: 40px 40px 0 0;
+    bottom: 0;
+  }
+  div[b1]:nth-child(5) {
+    left: 50px;
+  }
+  div[b1]:nth-child(6) {
+    right: 50px;
+  }
+  div[c] {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #293462;
+    margin-top: 10px;
+  }
+  div[c]:nth-child(7) {
+    margin-right: 40px;
+  }
+  div[c]:nth-child(8) {
+    margin-left: 40px;
+  }
+</style>

@@ -1,0 +1,142 @@
+<div b b1><p><p></div>
+    <div b b2><p><p></div>
+    <div b b3><p><p></div>
+    <div b b4><p><p></div>
+    <div b b5><p><p></div>
+    <div c><div b b6><p><p></div></div>
+    <div h><p></div>
+    <style>
+      body {
+        margin: 0;
+        background: #191919;
+      }
+      div, p {
+        position: absolute;
+      }
+      [b] {
+        width: 40px;
+        height: 190px;
+        border: 10px solid #191919;
+        box-shadow: 0 0 0 5px #E08027, inset 0 0 0 5px #E08027;
+      }
+      [b]>p:last-child {
+        width: 30px;
+        height: 10px;
+        background: #191919;
+        left: 5px;
+      }
+      [b]>p:first-child {
+        width: 10px;
+        height: 5px;
+        background: #191919;
+        -webkit-box-reflect: right 40px;
+        left: -10px;
+      }
+      [b1] {
+        height: 65px;
+        top: 45px;
+        left: 20px;
+        border-radius: 40px 40px 0 0;
+        border-bottom: 0;
+        box-border: 0 0 
+      }
+      [b1]>p:last-child {
+        bottom: -21px;
+      }
+      [b1]>p:first-child {
+        bottom: -21px;
+      }
+      [b2] {
+        height: 165px;
+        top: 80px;
+        left: 70px;
+        border-radius: 0 0 40px 40px;
+        border-top: 0;
+      }
+      [b2]>p:last-child {
+        top: -21px;
+      }
+      [b2]>p:first-child {
+        top: -21px;
+      }
+      [b3] {
+        height: 165px;
+        top: 45px;
+        left: 120px;
+        border-radius: 40px 40px 0 0;
+        border-bottom: 0;
+      }
+      [b3]>p:last-child {
+        bottom: -21px;
+      }
+      [b3]>p:first-child {
+        bottom: -21px;
+      }
+      [b4] {
+        height: 65px;
+        top: 180px;
+        left: 170px;
+        border-radius: 0 0 40px 40px;
+        border-top: 0;
+      }
+      [b4]>p:last-child {
+        top: -21px;
+      }
+      [b4]>p:first-child {
+        top: -21px;
+      }
+      [b5] {
+        height: 65px;
+        top: 80px;
+        left: -30px;
+        border-radius: 0 0 40px 40px;
+        border-top: 0;
+      }
+      [b5]>p:last-child {
+        top: -21px;
+      }
+      [b5]>p:first-child {
+        top: -21px;
+      }
+      [c] {
+        width: 60px;
+        height: 35px;
+    
+        top: 140px;
+        left: 215px;
+        overflow: hidden;
+      }
+      [b6] {
+        width: 60px;
+        height: 40px;
+        top: 5px;
+        left: 5px;
+        border-radius: 60px 0 0 60px;
+        border-right: 0;
+      }
+      [b6]>p:last-child {
+        display: none;
+        top: -21px;
+      }
+      [b6]>p:first-child {
+        display: none;
+        top: -21px;
+      }
+      [h] {
+        width: 50px;
+        height: 30px;
+        background: #E08027;
+        border-radius: 20px 30px 30px 20px;
+        top: 135px;
+        right: 85px;
+      }
+      [h]>p {
+        width: 10px;
+        height: 10px;
+        background: #191919;
+        border-radius: 50%;
+        bottom: 2px;
+        right: 10px;
+        -webkit-box-reflect: below 6px;
+      }
+    </style>

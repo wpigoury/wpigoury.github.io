@@ -1,16 +1,25 @@
 const selectBattles = document.querySelector("#battles");
 const selectTargets = document.querySelector("#targets");
+const titlesContainer = document.querySelector("#titlesContainer");
+const achievementsContainer = document.querySelector("#achievementsContainer");
+const imgContainer = document.querySelector("#imgContainer");
 const bodyContainer = document.querySelector("#bodyContainer");
 const codeContainer = document.querySelector("#codeContainer");
 let battleBaseUrl = "https://cssbattle.dev/battle/#";
 let targetBaseUrl = "https://cssbattle.dev/play/#";
+let targetImgBaseUrl = "./targets-img/#.png";
 
+let battles = {};
 let battleUrl = "";
+let battleTitle = "";
+let currentBattle = {};
 let targetUrl = "";
+let targetTitle = "";
+let currentTarget = {};
 
 const fetchBattlesJSON = async () => {
     const response = await fetch("./battles.json");
-    const battles = await response.json();
+    battles = await response.json();
     return battles;
 };
 
@@ -22,28 +31,50 @@ const fetchTarget = async (id) => {
 
 const selectBattlesEvent = (e) => {
     e.preventDefault();
+    currentBattle = battles.list[e.target.selectedOptions[0].index - 1];
     battleUrl = battleBaseUrl.replace("#", e.target.value);
-    const targets = e.target.selectedOptions[0].dataset["targets"];
-    populateTargets(targets);
+    battleTitle = e.target.selectedOptions[0].innerText;
+    populateTargets();
 };
 
 const selectTargetsEvent = (e) => {
     e.preventDefault();
+    codeContainer.removeEventListener("click", clickCodeEvent);
+    titlesContainer.innerHTML = "";
+    achievementsContainer.innerHTML = "";
+    imgContainer.innerHTML = "";
+    bodyContainer.innerHTML = "";
+    codeContainer.firstChild.innerHTML = "";
     const id = e.target.value;
+    currentTarget =
+        currentBattle.targets[e.target.selectedOptions[0].index - 1];
     targetUrl = targetBaseUrl.replace("#", id);
-    fetchTarget(id).then((target) => {
-        displayTarget(target);
+    targetTitle = e.target.selectedOptions[0].innerText;
+    fetchTarget(id).then((html) => {
+        displayTarget(id, html);
     });
+};
+
+const loadBodyEvent = (e) => {
+    e.target.contentDocument.body.style.overflow = "hidden";
+};
+
+const clickCodeEvent = (e) => {
+    const code = e.target.innerText;
+    try {
+        navigator.clipboard.writeText(code);
+    } catch (err) {
+        console.error(err.name, err.message);
+    }
 };
 
 const populateBattles = (battles) => {
     let option = null;
     let title = null;
     battles.forEach((battle) => {
-        console.log(battle);
         option = document.createElement("option");
         option.value = battle.id;
-        option.dataset.targets = battle.targets;
+        option.dataset.targets = battle.targetsnb;
         title = document.createTextNode(
             "Battle #" + battle.id + " - " + battle.title
         );
@@ -54,27 +85,50 @@ const populateBattles = (battles) => {
     selectBattles.addEventListener("change", selectBattlesEvent);
 };
 
-const populateTargets = (targets) => {
+const populateTargets = () => {
     while (selectTargets.lastElementChild && selectTargets.children.length > 1)
         selectTargets.removeChild(selectTargets.lastElementChild);
-
-    const targetRange = targets.split("-");
-    for (let i = targetRange[0]; i <= targetRange[1]; i++) {
+    currentBattle.targets.forEach((target) => {
         option = document.createElement("option");
-        option.value = i;
-        title = document.createTextNode("Target #" + i);
+        option.value = target.id;
+        title = document.createTextNode(
+            "Target #" + target.id + " - " + target.title
+        );
         option.appendChild(title);
         selectTargets.appendChild(option);
-    }
+    });
     selectTargets.addEventListener("change", selectTargetsEvent);
 };
 
-const displayTarget = (target) => {
-    console.dir(bodyContainer);
-    target = target.replace("body", "#bodyContainer");
-    bodyContainer.innerHTML = target;
-    codeContainer.innerText = target;
-    console.log(target);
+const displayTarget = (id, html) => {
+    const battleLink = document.createElement("a");
+    battleLink.href = battleUrl;
+    battleLink.target = "_blank";
+    battleLink.innerText = battleTitle;
+    const targetLink = document.createElement("a");
+    targetLink.href = targetUrl;
+    targetLink.target = "_blank";
+    targetLink.innerText = targetTitle;
+    titlesContainer.append(battleLink);
+    titlesContainer.append(targetLink);
+    const scoreIcon = currentTarget.achievements.match === "100%" ? "✅" : "🔴";
+    achievementsContainer.innerHTML =
+        scoreIcon +
+        " " +
+        currentTarget.achievements.match +
+        " {" +
+        currentTarget.achievements.score +
+        "}";
+    const imgTarget = document.createElement("img");
+    imgTarget.src = targetImgBaseUrl.replace("#", id);
+    imgContainer.append(imgTarget);
+    const body = document.createElement("object");
+    body.type = "text/html";
+    body.data = "./targets/target-" + id + ".html";
+    body.addEventListener("load", loadBodyEvent);
+    bodyContainer.append(body);
+    codeContainer.firstChild.innerText = html;
+    codeContainer.addEventListener("click", clickCodeEvent);
 };
 
 fetchBattlesJSON().then((battles) => {

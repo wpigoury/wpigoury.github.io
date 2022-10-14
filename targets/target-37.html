@@ -1,0 +1,33 @@
+<div a></div>
+<div b></div>
+<div c></div>
+<style>
+  body {
+    margin: 0;
+    background: #6592CF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div {
+    position: fixed;
+    background: #6592CF;
+  }
+  div:nth-child(odd) {
+    background: #243D83;
+  }
+  div[a] {
+    width: 250px;
+    height: 250px
+  }
+  div[b] {
+    width: 150px;
+    height: 150px;
+    transform: rotate(15deg);
+  }
+  div[c] {
+    width: 75px;
+    height: 75px;
+    transform: rotate(30deg);
+  }
+</style>

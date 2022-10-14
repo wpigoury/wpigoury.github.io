@@ -1,0 +1,40 @@
+<div r class="r1"></div>
+<div r class="r2"></div>
+<div c class="c1"></div>
+<div c class="c2"></div>
+<style>
+  body {
+    margin: 0;
+    background: #62306D;
+  }
+  div {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    background: #dd6b4d;
+  }
+  div[r].r1 {
+    border-radius: 100px 100px 0 0;
+    background: #AA445F;
+    top: 50px;
+    left: 80px;
+  }
+  div[r].r2 {
+    border-radius: 0 0 100px 100px;
+    background: #E38F66;
+    bottom: 50px;
+    right: 80px;
+  }
+  div[c] {
+    border-radius: 50%;
+    background: #F7EC7D;
+  }
+  div[c].c1 {
+    top: 100px;
+    left: 80px
+  }
+  div[c].c2 {
+    top: 100px;
+    right: 80px
+  }
+</style>

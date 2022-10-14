@@ -1,0 +1,59 @@
+<div head>
+    <div mouth></div>
+    <div eye e1></div>
+    <div eye e2></div>
+    <div hair h1></div>
+    <div hair h2></div>
+  </div>
+  <style>
+    body {
+      margin: 0;
+      background: #293462;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    div {
+      background: #FFF1C1;
+      position: absolute;
+    }
+    div[head] {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      background: #FE5F55;
+      border-radius: 50% 50% 25% 25%;
+      overflow: hidden;
+    }
+    div[mouth] {
+      width: 40px;
+      height: 10px;
+      top: 170px;
+      left: 80px;
+      border-radius: 25px;
+    }
+    div[eye] {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      top: 90px;
+    }
+    div[eye][e1] {
+      left: 20px;
+    }
+    div[eye][e2] {
+      right: 20px;
+    }
+    div[hair] {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      top: -50px;
+    }
+    div[hair][h1] {
+      left: 0;
+    }
+    div[hair][h2] {
+      right: 0;
+    }
+  </style>

@@ -7,18 +7,31 @@
         <title>CSS Battle</title>
         <script src="script.js" defer></script>
         <link rel="stylesheet" href="style.css" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Fira Code"
+            rel="stylesheet"
+        />
     </head>
     <body>
-        <h1>My takes at CSS Battles</h1>
-        <select id="battles">
-            <option value="">Select a battle</option>
-        </select>
-        <select id="targets">
-            <option value="">Select a target</option>
-        </select>
-        <main id="container">
-            <section id="bodyContainer"></section>
-            <code id="codeContainer"></code>
-        </main>
+        <div id="container">
+            <h1>My takes at CSS Battles</h1>
+            <select id="battles">
+                <option value="">Select a battle</option>
+            </select>
+            <select id="targets">
+                <option value="">Select a target</option>
+            </select>
+            <main id="targetContainer">
+                <titles id="titlesContainer"></titles>
+                <h2>Achievements</h2>
+                <achievements id="achievementsContainer"></achievements>
+                <h2>Target</h2>
+                <target id="imgContainer"></target>
+                <h2>Result</h2>
+                <section id="bodyContainer"></section>
+                <h2>Code</h2>
+                <code id="codeContainer"><p></p></code>
+            </main>
+        </div>
     </body>
 </html>

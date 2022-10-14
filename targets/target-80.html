@@ -1,0 +1,49 @@
+<div c>
+    <div w><p><p><p><p><p><p><p></div>
+    <div b><p><p><p><p><p></div>
+  </div>
+  <style>
+    body {
+      margin: 0;
+      background: #998235;
+    }
+    [w], [b] {
+      width: 180px;
+      height: 100px;
+      display: flex;
+    }
+    [w]>p {
+      margin: 0;
+      width: 20px;
+      height: 70px;
+      background: white;
+      margin-top: 25px;
+      margin-left: 5px;
+      border-radius: 5px;
+    }
+    [b] {
+      margin-top: -100px;
+    }
+    [b]>p {
+      width: 15px;
+      height: 35px;
+      background: #191919;
+      margin-top: 25px;
+      margin-left: 10px;
+    }
+    [b]>p:first-child {
+      margin-left: 20px;
+    }
+    [b]>p:nth-child(3) {
+      margin-left: 35px;
+    }
+    [c] {
+      width: 180px;
+      height: 100px;
+      background: #191919;
+      margin-top: 100px;
+      margin-left: 50%;
+      translate: -50%;
+      border-radius: 10px;
+    }
+  </style>

@@ -1,0 +1,42 @@
+<div c></div>
+<div c class="cy">
+  <div r></div>
+  <div r class="r1"></div>
+</div>
+<div c class="cr"></div>
+<style>
+  body {
+    margin: 0;
+    background: #E38F66;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+  }
+  div[c] {
+    border-radius: 50%;
+    background: #AA445F;
+  }
+  div[c].cy {
+    width: 140px;
+    height: 140px;
+    background: #F7EC7D;
+  }
+  div[c].cr {
+    width: 80px;
+    height: 80px;
+  }
+  div[r] {
+    width: 70px;
+    height: 70px;
+    background: #AA445F;
+  }
+  div[r].r1 {
+    top: 70px;
+    left: 70px;
+  }
+</style>

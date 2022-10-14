@@ -1,0 +1,54 @@
+<div a a1></div>
+<div a a2></div>
+<div c></div>
+<div ch><p></div>
+<style>
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div, p {
+    position: absolute;
+  }
+  [a] {
+    width: 44px;
+    height: 180px;
+    background: #2E2926;
+  }
+  [a1] {
+    transform: skew(25deg, 0);
+    margin-right: -88px;
+  }
+  [a2] {
+    transform: skew(-25deg, 0);
+    margin-left: -88px;
+  }
+  [c] {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #0088CA;
+  }
+  [ch] {
+    width: 200px;
+    height: 148px;
+    overflow: hidden;
+    margin-left: 40px;
+    margin-top: -14px;
+  }
+  [ch]>p {
+    width: 300px;
+    height: 300px;
+    border: 20px solid #0088CA;
+    box-shadow: 0 0 0 8px white, inset 0 0 0 8px white;
+    rotate: 45deg;
+    bottom: 62px;
+    left: -70px;
+  }
+</style>

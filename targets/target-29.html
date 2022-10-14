@@ -1,0 +1,39 @@
+<div r>
+    <div c class="c1"></div>
+    <div c class="c2"></div>
+    <div c class="c3"></div>
+    <div c class="c4"></div>
+  </div>
+  <style>
+    body {
+      margin: 0;
+      background: #F3AC3C;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    div[r] {
+      width: 200px;
+      height: 200px;
+      background: #1A4341;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    div[c] {
+      width: 100px;
+      height: 100px;
+      background: #F3AC3C;
+    }
+    .c4 {
+      border-radius: 100px 0 0 0;
+    }
+    .c3 {
+      border-radius: 0 100px 0 0;
+    }
+    .c1 {
+      border-radius: 0 0 100px 0;
+    }
+    .c2 {
+      border-radius: 0 0 0 100px;
+    }
+  </style>

@@ -1,0 +1,75 @@
+<div>
+    <div d d1></div>
+    <div d d2></div>
+    <div d d0></div>
+    <div d d3></div>
+    <div n></div>
+    <div c></div>
+    <div e></div>
+  </div>
+  <style>
+    body {
+      margin: 0;
+      background: #243D83;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    div {
+      position: fixed;
+    }
+    [d] {
+      width: 60px;
+      height: 50px;
+      background: #6592CF;
+      border-radius: 50%;
+      margin-top: -85px;
+      margin-left: -30px;
+      -webkit-box-reflect: below 70px;
+      transform-origin: 30px 85px;
+      z-index: 2;
+    }
+    [d1] {
+      rotate: 90deg;
+    }
+    [d2] {
+      rotate: 45deg;
+      width: 60px;
+      margin-top: -83px;
+      margin-left: -32px;
+      -webkit-box-reflect: below 63px;
+    }
+    [d3] {
+      rotate: -45deg;
+      margin-top: -83px;
+      margin-left: -28px;
+      -webkit-box-reflect: below 63px;
+    }
+    [c] {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      background: #6592CF;
+      margin-left: 0;
+      transform: translate(-50%, -50%);
+    }
+    [n] {
+      width: 60px;
+      height: 70px;
+      background: #243D83;
+      margin-top: -45px;
+      margin-left: -30px;
+      border-radius: 0 0 50px 50px;
+      z-index: 1;
+    }
+    [e] {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #6592CF;
+      z-index: 1;
+      margin-top: -20px;
+      margin-left: -15px;
+      -webkit-box-reflect: right 10px;
+    }
+  </style>

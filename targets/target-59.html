@@ -1,0 +1,58 @@
+<div class="container">
+    <div class="body"><img /><i></i><i></i><i></i><u></u><u></u></div>
+  </div>
+  <style>
+  body {
+    margin: 0;
+  }
+  .container {
+    background-color: #191919;
+    width: 400px;
+    height: 300px;
+    position: relative;
+  }
+  
+  .body {
+    margin: 8px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: relative;
+  }
+  
+  .container * {
+    background: #191919;
+    position: absolute;
+  }
+  .container img {
+    background: #4f77ff;
+    padding: 75px;
+    margin: 67px 117px;
+  }
+  .container u,
+  .container i {
+    background: transparent;
+    border: 10px solid #191919;
+    padding: 15px 100px;
+    margin: 97px 90px;
+  }
+  .container i + i {
+    margin: 137px 90px;
+  }
+  .container i + i + i {
+    margin: 40px 1px;
+    padding: 88px;
+  }
+  .container img,
+  .container u {
+    border-radius: 50%;
+  }
+  .container u {
+    margin: 37px 147px;
+    padding: 95px;
+  }
+  .container u + u {
+    margin: 37px 27px;
+  }
+  </style>

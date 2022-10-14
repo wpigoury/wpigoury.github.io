@@ -1,0 +1,38 @@
+<div r class="r1">
+    <div c></div>
+  </div>
+  <div r class="r2">
+    <div c></div>
+  </div>
+  <style>
+    body {
+      margin: 0;
+      background: #AA445F;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    div[r] {
+      position: fixed;
+      width: 100px;
+      height: 200px;
+      background: #AA445F;
+      overflow: hidden;
+    }
+    .r1 {
+      left: 75px;
+    }
+    .r2 {
+      right: 75px;
+    }
+    div[c] {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: #F7EC7D;
+    }
+    .r2 div[c] {
+      background: #E38F66;
+      margin-left: -100px;
+    }
+  </style>

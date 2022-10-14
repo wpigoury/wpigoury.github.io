@@ -1,0 +1,78 @@
+<div d1></div>
+<div d2></div>
+<div d3></div>
+<div d4></div>
+<div d5></div>
+<div s s1></div>
+<div s s2></div>
+<style>
+  body {
+    margin: 0;
+    background: #1A4341;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div {
+    position: fixed;
+    background: #F3AC3C;
+  }
+  [d1] {
+    width: 100px;
+    height: 0;
+    border-radius: 20px;
+    margin-top: 60px;
+    border-top: 60px solid #F3AC3C;
+    border-bottom: 80px solid #998235;
+  }
+  [d1]:before, [d1]:after {
+    content: '';
+    position: absolute;
+  }
+  [d1]:before {
+    border: 25px solid #998235;
+    border-radius: 25px 25px 0 0;
+    top: -30px;
+  }
+  [d1]:after {
+    border: 25px solid #F3AC3C;
+    border-radius: 0 0 25px 25px;
+    top: -30px;
+    left: 50px;
+  }
+  [d2] {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: -70px;
+  }
+  [d3] {
+    border: 10px solid #F3AC3C;
+    margin-top: -140px;
+  }
+  [d4] {
+    width: 130px;
+    border: 10px solid #F3AC3C;
+    border-radius: 10px 10px 0 10px;
+    margin-top: -180px;
+    margin-left: 50px;
+  }
+  [d5] {
+    height: 10px;
+    border: 10px solid #F3AC3C;
+    border-radius: 0 0 10px 10px;
+    margin-top: -150px;
+    margin-left: 180px;
+  }
+  [s] {
+    border: 10px solid #998235;
+    border-radius: 10px;
+    margin-left: 180px;
+  }
+  [s1] {
+    margin-top: -80px;
+  }
+  [s2] {
+    margin-top: -20px;
+  }
+</style>

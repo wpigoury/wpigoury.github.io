@@ -1,0 +1,44 @@
+<div a></div>
+<div b><div></div></div>
+<div c></div>
+<div d><div></div></div>
+<style>
+  body {
+    margin: 0;
+    background: #293462;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  div[a] {
+    width: 200px;
+    height: 200px;
+    background: #FFF1C1;
+  }
+  div[b] {
+    width: 100px;
+    height: 200px;
+    background: #FE5F55;
+  }
+  div[b]>div {
+    width: 100px;
+    height: 50px;
+    background: #A64942;
+    margin-top: 150px;
+  }
+  div[c] {
+    width: 100px;
+    height: 100px;
+    background: none;
+  }
+  div[d] {
+    width: 200px;
+    height: 100px;
+    background: #FE5F55;
+  }
+  div[d]>div {
+    width: 50px;
+    height: 100px;
+    background: #A64942;
+    margin-left: 150px;
+  }
+</style>

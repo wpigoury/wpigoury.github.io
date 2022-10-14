@@ -1,0 +1,72 @@
+<div b></div>
+<div snake>
+  <div l>
+    <div s></div>
+    <div s></div>
+    <div s></div>
+    <div s></div>
+    <div s></div>
+  </div>
+  <div l>
+    <div s></div>
+  </div>
+  <div l>
+    <div s></div>
+  </div>
+  <div l>
+    <div s></div>
+  </div>
+  <div l>
+    <div s></div>
+    <div s></div>
+    <div s></div>
+    <div s></div>
+    <div s></div>
+    <div s></div>
+    <div s></div>
+    <div s></div>
+    <div s></div>
+  </div>
+</div>
+<style>
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background: #C74E4E;
+  }
+  [b] {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    top: 90px;
+    left: 90px;
+  }
+  [snake] {
+    position: absolute;
+    width: 220px;
+    height: 120px;
+    top: 90px;
+    right: 90px;
+  }
+  [l] {
+    width: 220px;
+    height: 20px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: right;
+  }
+  [s] {
+    width: 20px;
+    height: 20px;
+    background: #E0E246;
+    border-radius: 5px;
+    margin-left: 5px;
+  }
+  [l]:last-child [s]:first-child {
+    margin-left: 0;
+  }
+</style>

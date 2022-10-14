@@ -1,0 +1,41 @@
+<div c a><div c b></div></div>
+<div s></div>
+<div m></div>
+<style>
+  body {
+    margin: 0;
+    background: #243D83;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div {
+    position: absolute;
+  }
+  [c] {
+    width: 100px;
+    height: 100px;
+    background: #6592CF;
+    border-radius: 50%;
+  }
+  [a] {
+    top: 58px;
+    left: 108px;
+    -webkit-box-reflect: below -16px;
+  }
+  [b] {
+    -webkit-box-reflect: right -16px;
+  }
+  [s] {
+    width: 120px;
+    height: 120px;
+    background: #243D83;
+    rotate: 45deg;
+  }
+  [m] {
+    width: 60px;
+    height: 60px;
+    background: #EEB850;
+    border-radius: 50%;
+  }
+</style>

@@ -1,0 +1,59 @@
+<div c></div>
+<div r r1></div>
+<div r r2></div>
+<div r r3></div>
+<div c cr cr1></div>
+<div c cr cr2></div>
+<div c cr cr3></div>
+<style>
+  body {
+    margin: 0;
+    background: #1A4341;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div {
+    position: fixed;
+  }
+  [c] {
+    width: 100px;
+    height: 100px;
+    background: #F3AC3C;
+    border-radius: 50%;
+  }
+  [r] {
+    width: 10px;
+    height: 180px;
+    background: #F3AC3C;
+    border-radius: 10px;
+    transform-origin: center 100px;
+    margin-bottom: 20px;
+  }
+  [r2] {
+    transform: rotate(60deg);
+  }
+  [r3] {
+    transform: rotate(120deg);
+  }
+  [cr] {
+    background: #998235;
+  }
+  [cr1] {
+    width: 10px;
+    height: 10px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+  }
+  [cr2] {
+    width: 20px;
+    height: 20px;
+    margin-top: 50px;
+  }
+  [cr3] {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+  }
+</style>

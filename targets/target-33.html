@@ -1,0 +1,56 @@
+<div half class="l">
+    <div><div></div></div>
+  </div>
+  <div half class="r">
+    <div quar class="t">
+      <div></div>
+    </div>
+    <div quar class="b"></div>
+  </div>
+  <style>
+    body {
+      margin: 0;
+      background: #1A4341;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    div {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    div[half].l {
+      display: flex;
+      justify-content: right;
+      align-items: center;
+    }
+    div[half].l>div {
+      width: 150;
+      height: 150;
+      margin-right: -75;
+      border-radius: 100%;
+      background: #998235;
+    }
+    div[half].l>div>div {
+      width: 30;
+      height: 30;
+      border-radius: 50%;
+      background: #0B2429;
+      margin-left: 30;
+      margin-top: 30;
+    }
+    div[half].r {
+      grid-template-rows: 1fr 1fr;
+    }
+    div[quar] {
+      height: 50%;
+    }
+    div[quar].t div {
+      width: 200;
+      height: 200;
+      border-radius: 50%;
+      margin-left: -100;
+      margin-top: 50;
+      background: #F3AC3C;
+    }
+  </style>
