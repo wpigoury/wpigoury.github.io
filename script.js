@@ -2,6 +2,7 @@ const selectBattles = document.querySelector("#battles");
 const selectTargets = document.querySelector("#targets");
 const titlesContainer = document.querySelector("#titlesContainer");
 const achievementsContainer = document.querySelector("#achievementsContainer");
+const unmetContainer = document.querySelector("#unmetContainer");
 const imgContainer = document.querySelector("#imgContainer");
 const bodyContainer = document.querySelector("#bodyContainer");
 const codeContainer = document.querySelector("#codeContainer");
@@ -68,6 +69,16 @@ const clickCodeEvent = (e) => {
     }
 };
 
+const clickUnmetEvent = (e) => {
+    e.preventDefault();
+    const [battleId, targetId] = e.target.innerText.split("-");
+    window.scrollTo(0, 0);
+    selectBattles.value = battleId;
+    selectBattles.dispatchEvent(new Event("change"));
+    selectTargets.value = targetId;
+    selectTargets.dispatchEvent(new Event("change"));
+};
+
 const populateBattles = (battles) => {
     let option = null;
     let title = null;
@@ -83,6 +94,21 @@ const populateBattles = (battles) => {
     });
     selectTargets.removeEventListener("change", selectTargetsEvent);
     selectBattles.addEventListener("change", selectBattlesEvent);
+};
+
+const populateUnmet = (unmetTargets) => {
+    if (unmetTargets.length === 0) {
+        unmetContainer.innerText = "No unmet, well done!";
+        return;
+    }
+    unmetTargets.forEach((id) => {
+        const target = document.createElement("a");
+        //target.href = "#";
+        target.dataset.target = id;
+        target.innerText = id;
+        unmetContainer.append(target);
+        target.addEventListener("click", clickUnmetEvent);
+    });
 };
 
 const populateTargets = () => {
@@ -133,4 +159,5 @@ const displayTarget = (id, html) => {
 
 fetchBattlesJSON().then((battles) => {
     populateBattles(battles.list);
+    populateUnmet(battles.unmetTargets);
 });

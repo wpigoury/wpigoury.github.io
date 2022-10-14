@@ -7,6 +7,11 @@ h2 {
     font-size: 1rem;
     margin-bottom: 0;
 }
+h3 {
+    font-size: 0.8rem;
+    width: 100%;
+    margin-bottom: 0;
+}
 select {
     width: 45%;
     font-family: "Fira Code";
@@ -67,4 +72,19 @@ code#codeContainer p {
     white-space: pre-wrap;
     font-family: "Fira Code";
     font-size: 0.9rem;
+}
+unmet#unmetContainer {
+    width: 400px;
+    font-size: 0.8rem;
+}
+unmet#unmetContainer a {
+    color: #191919;
+    text-decoration: dotted;
+    display: block;
+    transition: color 500ms;
+}
+unmet#unmetContainer a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: black;
 }

@@ -1,6 +1,6 @@
 {
     "baseUrl": "https://cssbattle.dev/battle/#",
-    "unmetTargets": [66, 72, 79, 96, 103, 131],
+    "unmetTargets": ["12-66", "13-72", "14-79", "16-96", "18-103", "21-131"],
     "list": [
         {
             "id": 1,
