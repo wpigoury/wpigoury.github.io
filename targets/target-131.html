@@ -2,6 +2,7 @@
 <div c cy></div>
 <div b bp></div>
 <div c cp></div>
+<div b bc></div>
 <style>
   body {
     margin: 0;
@@ -10,11 +11,10 @@
   div {
     position: absolute;
   }
-  [b] {
+  [b], :before, :after {
     width: 30px;
     height: 110px;
     border-radius: 15px;
-    -webkit-box-reflect: right 60px;
     top: 70px;
   }
   [bp] {
@@ -24,7 +24,16 @@
   [by] {
     background: #FFFBDA;
     top: 70px;
-    left: 185px;    
+    left: 275px;    
+  }
+  :before, :after {
+    content: '';
+    position: fixed;
+  }
+  [bc]:before {
+    background: #62306D;
+    left: 185px;
+    height: 118px;
   }
   [c] {
     width: 60px;
