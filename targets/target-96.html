@@ -1,8 +1,6 @@
 <div p></div>
-<div b b1></div>
-<div b b2></div>
-<div b b3></div>
-<div b b4></div>
+<div c c1></div>
+<div c c2></div>
 <style>
   * {
     margin: 0;
@@ -14,30 +12,42 @@
     justify-content: center;
     align-items: center;
   }
+  [c]:after, [c]:before {
+    content: '';
+    position: fixed;
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    border: 20px solid #243D83;
+    rotate: 180deg;
+  }
   div {
     width: 200px;
     height: 200px;
-    position: absolute;
+    position: fixed;
     border-radius: 50%;
   }
   [p] {
     background: #6592CF;
   }
-  [b] {
-    width: 170px;
-    height: 170px;
-    border: 20px solid #243D83;
+  [c] {
+    width: 200px;
+    height: 200px;
   }
-  [b1] {
+  [c1]:before {
+    top: 65px;
     left: 40px;
   }
-  [b2] {
-    right: 40px;
+  [c1]:after {
+    top: 65px;
+    left: 190px;
   }
-  [b3] {
+  [c2]:before {
     top: -10px;
+    left: 115px;
   }
-  [b4] {
-    bottom: -10px;
+  [c2]:after {
+    top: 140px;
+    left: 115px;
   }
 </style>
