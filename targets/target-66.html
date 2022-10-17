@@ -1,61 +1,65 @@
 <div b></div>
 <div bh></div>
 <div h></div>
-<div e></div>
-<div w w1></div>
-<div w w2></div>
+<div e r></div>
+<div w r></div>
+<div wb r></div>
 <style>
-  body {
+  * {
     margin: 0;
+    box-sizing: border-box;
+  }
+  body {
     background: #191919;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   div {
     position: fixed;
-    width: 100px;
-    height: 100px;
     background: #F2AD43;
-    margin-left: 50%;
-    transform: translate(-50%);
   }
   [b] {
-    width: 240px;
-    height: 80px;
-    margin-top: 100px;
+    width: 340px;
+    height: 100px;
+    border-radius: 50px;
   }
   [bh] {
     width: 80px;
-    height: 30px;
+    height: 40px;
     background: #191919;
-    margin-top: 100px;
-    border-radius: 0 0 10px 10px;
+    border-radius: 10px;
+    top: 90px;
   }
   [h] {
     width: 20px;
     height: 20px;
-    margin-top: 110px;
+    top: 110px;
+    border-radius: 5px 5px 0 0;
+  }
+  [r] {
+    border-radius: 50%;
   }
   [e] {
     width: 10px;
     height: 10px;
-    border-radius: 50%;
-    margin-top: 105px;
-    transform: translate(-15px);
+    top: 105px;
+    left: 185px;
     -webkit-box-reflect: right 10px;
   }
   [w] {
+    width: 100px;
+    height: 100px;
     background: #191919;
-    border-radius: 50%;
-  }
-  [w1] {
-    margin-top: 100px;
-    margin-left: 75px;
+    left: 25px;
     -webkit-box-reflect: right 150px;
   }
-  [w2] {
+  [wb] {
     width: 200px;
     height: 200px;
-    margin-top: 160px;
-    margin-left: 140px;
+    background: #191919;
+    top: 160px;
+    left: 40px;
     -webkit-box-reflect: right -80px;
   }
 </style>
