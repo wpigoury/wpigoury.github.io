@@ -1,6 +1,6 @@
 {
     "baseUrl": "https://cssbattle.dev/battle/#",
-    "unmetTargets": ["18-103", "21-131"],
+    "unmetTargets": ["18-103"],
     "list": [
         {
             "id": 1,
@@ -1191,8 +1191,8 @@
                     "id": 131,
                     "title": "Letter W",
                     "achievements": {
-                        "match": "99.9%",
-                        "score": "596.82 (688 chars)"
+                        "match": "100%",
+                        "score": "600.15 (828 chars)"
                     }
                 },
                 {
