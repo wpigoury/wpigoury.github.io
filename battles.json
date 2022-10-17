@@ -1,6 +1,6 @@
 {
     "baseUrl": "https://cssbattle.dev/battle/#",
-    "unmetTargets": ["14-79", "16-96", "18-103", "21-131"],
+    "unmetTargets": ["16-96", "18-103", "21-131"],
     "list": [
         {
             "id": 1,
@@ -726,8 +726,8 @@
                     "id": 79,
                     "title": "Tambourine",
                     "achievements": {
-                        "match": "99.9%",
-                        "score": "596.21 (992 chars)"
+                        "match": "100%",
+                        "score": "600.01 (1180 chars)"
                     }
                 },
                 {
