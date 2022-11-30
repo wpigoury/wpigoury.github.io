@@ -1204,6 +1204,29 @@
                     }
                 }
             ]
+        },
+        {
+            "id": 22,
+            "title": "Grid",
+            "targetsnb": "133-140",
+            "targets": [
+                {
+                    "id": 133,
+                    "title": "Spiral",
+                    "achievements": {
+                        "match": "100%",
+                        "score": "600.14 (838 chars)"
+                    }
+                },
+                {
+                    "id": 134,
+                    "title": "Wig",
+                    "achievements": {
+                        "match": "100%",
+                        "score": "602.56 (530 chars)"
+                    }
+                }
+            ]
         }
     ]
 }
