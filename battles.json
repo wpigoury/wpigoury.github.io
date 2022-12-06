@@ -951,6 +951,14 @@
                     }
                 },
                 {
+                    "id": "103-alt",
+                    "title": "Super Saiyan",
+                    "achievements": {
+                        "match": "100%",
+                        "score": "604.99 (460 chars)"
+                    }
+                },
+                {
                     "id": 104,
                     "title": "Amegakure",
                     "achievements": {
