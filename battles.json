@@ -1233,6 +1233,22 @@
                         "match": "100%",
                         "score": "602.56 (530 chars)"
                     }
+                },
+                {
+                    "id": 135,
+                    "title": "Spikes",
+                    "achievements": {
+                        "match": "100%",
+                        "score": "601.87 (563 chars)"
+                    }
+                },
+                {
+                    "id": 136,
+                    "title": "Alien Eye",
+                    "achievements": {
+                        "match": "100%",
+                        "score": "601.15 (614 chars)"
+                    }
                 }
             ]
         }
