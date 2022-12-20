@@ -1265,6 +1265,22 @@
                         "match": "100%",
                         "score": "604.28 (476 chars)"
                     }
+                },
+                {
+                    "id": 139,
+                    "title": "Lamp",
+                    "achievements": {
+                        "match": "100%",
+                        "score": "605.98 (441 chars)"
+                    }
+                },
+                {
+                    "id": 140,
+                    "title": "Eclipse",
+                    "achievements": {
+                        "match": "100%",
+                        "score": "601.77 (569 chars)"
+                    }
                 }
             ]
         }
