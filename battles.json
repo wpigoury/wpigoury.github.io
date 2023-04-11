@@ -1325,7 +1325,23 @@
                     "title": "Long Heart",
                     "achievements": {
                         "match": "100%",
-                        "score": "0601.94 {559}"
+                        "score": "601.94 {559}"
+                    }
+                },
+                {
+                    "id": 145,
+                    "title": "Spotlight",
+                    "achievements": {
+                        "match": "100%",
+                        "score": "620.06 {314}"
+                    }
+                },
+                {
+                    "id": 146,
+                    "title": "Streaks",
+                    "achievements": {
+                        "match": "100%",
+                        "score": "616.42 {335}"
                     }
                 }
             ]
