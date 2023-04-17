@@ -1343,6 +1343,22 @@
                         "match": "100%",
                         "score": "616.42 {335}"
                     }
+                },
+                {
+                    "id": 147,
+                    "title": "Splash",
+                    "achievements": {
+                        "match": "100%",
+                        "score": "605.49 {450}"
+                    }
+                },
+                {
+                    "id": 148,
+                    "title": "Eight",
+                    "achievements": {
+                        "match": "100%",
+                        "score": "612.46 {364}"
+                    }
                 }
             ]
         }
