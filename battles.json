@@ -1359,6 +1359,22 @@
                         "match": "100%",
                         "score": "612.46 {364}"
                     }
+                },
+                {
+                    "id": 149,
+                    "title": "Earthworm",
+                    "achievements": {
+                        "match": "100%",
+                        "score": "600.01 {1089}"
+                    }
+                },
+                {
+                    "id": 150,
+                    "title": "Finger Heart",
+                    "achievements": {
+                        "match": "100%",
+                        "score": "601.75 {570}"
+                    }
                 }
             ]
         }
