@@ -1377,6 +1377,94 @@
                     }
                 }
             ]
+        },
+        {
+            "id": "TA-1",
+            "title": "Time Attack #1",
+            "targetsnb": "TA1-TA4",
+            "url": "https://cssbattle.dev/battle/OzwOT17YcT3b8TbNevqv",
+            "targets": [
+                {
+                    "id": "TA1",
+                    "title": "Arrival",
+                    "url": "https://cssbattle.dev/play/FCjMUyn3eocPxNP322bE",
+                    "achievements": {
+                        "match": "100%",
+                        "score": "600"
+                    }
+                },
+                {
+                    "id": "TA2",
+                    "title": "Loop",
+                    "url": "https://cssbattle.dev/play/o9FYv37q6jd0N2CbzWxv",
+                    "achievements": {
+                        "match": "100%",
+                        "score": "600"
+                    }
+                },
+                {
+                    "id": "TA3",
+                    "title": "Fingerprint",
+                    "url": "https://cssbattle.dev/play/M3LDjqxU4XgWvUBbPvlU",
+                    "achievements": {
+                        "match": "99.9%",
+                        "score": "-"
+                    }
+                },
+                {
+                    "id": "TA4",
+                    "title": "Maze",
+                    "url": "https://cssbattle.dev/play/6VtL2dqi1cWbrloOCkZa",
+                    "achievements": {
+                        "match": "100%",
+                        "score": "600"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "TA-2",
+            "title": "Time Attack #2",
+            "targetsnb": "TA5-TA8",
+            "url": "https://cssbattle.dev/battle/9crk8153AW0QGM8Ne9Ty",
+            "targets": [
+                {
+                    "id": "TA5",
+                    "title": "Fence",
+                    "url": "https://cssbattle.dev/play/JrMi0WGxIzQdHnmsEW4d",
+                    "achievements": {
+                        "match": "100%",
+                        "score": "600"
+                    }
+                },
+                {
+                    "id": "TA6",
+                    "title": "Dune",
+                    "url": "https://cssbattle.dev/play/3xFrqG0DnrSjSeddTdg9",
+                    "achievements": {
+                        "match": "100%",
+                        "score": "600"
+                    }
+                },
+                {
+                    "id": "TA7",
+                    "title": "Craters",
+                    "url": "https://cssbattle.dev/play/8SYCNjPdLYf2ZilDpj88",
+                    "achievements": {
+                        "match": "100%",
+                        "score": "600"
+                    }
+                },
+                {
+                    "id": "TA8",
+                    "title": "Plus",
+                    "url": "https://cssbattle.dev/play/FrqPxrIWoABJman0eLuf",
+                    "achievements": {
+                        "match": "100%",
+                        "score": "600"
+                    }
+                }
+            ]
         }
     ]
 }

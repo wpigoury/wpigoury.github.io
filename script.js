@@ -33,7 +33,9 @@ const fetchTarget = async (id) => {
 const selectBattlesEvent = (e) => {
     e.preventDefault();
     currentBattle = battles.list[e.target.selectedOptions[0].index - 1];
-    battleUrl = battleBaseUrl.replace("#", e.target.value);
+    battleUrl = currentBattle?.url
+        ? currentBattle?.url
+        : battleBaseUrl.replace("#", e.target.value);
     battleTitle = e.target.selectedOptions[0].innerText;
     populateTargets();
 };
@@ -49,7 +51,9 @@ const selectTargetsEvent = (e) => {
     const id = e.target.value;
     currentTarget =
         currentBattle.targets[e.target.selectedOptions[0].index - 1];
-    targetUrl = targetBaseUrl.replace("#", id);
+    targetUrl = currentTarget?.url
+        ? currentTarget.url
+        : targetBaseUrl.replace("#", id);
     targetTitle = e.target.selectedOptions[0].innerText;
     fetchTarget(id).then((html) => {
         displayTarget(id, html);

@@ -1,0 +1,41 @@
+<div>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+</div>
+<style>
+  body {
+    margin: 0;
+    background: #998235;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    background: #998235;
+  }
+  p {
+    position: absolute;
+    margin: 0;
+    width: 60px;
+    height: 60px;
+    background: repeating-linear-gradient(90deg, #0B2429, #0B2429 20px, #998235 20px, #998235 40px, #0B2429 40px, #0B2429 60px);
+  }
+  p:nth-child(2n+1) {
+    rotate: 90deg;
+  }
+  p:nth-child(1) {
+    right: 0;
+  }
+  p:nth-child(2) {
+    right: 0;
+    bottom: 0;
+  }
+  p:nth-child(3) {
+    bottom: 0;
+  }
+</style>

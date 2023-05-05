@@ -1,0 +1,54 @@
+<div c1></div>
+<div c2>
+<div c3>
+  <div c4></div>
+  <div c5></div>
+</div>
+</div>
+<style>
+  body {
+    margin: 0;
+    background: #998235;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: #EFF33C;
+    border-radius: 50%;
+  }
+  [c1] {
+    width: 210px;
+    height: 210px;
+  }
+  [c2] {
+    width: 180px;
+    height: 180px;
+    background: #998235;
+    overflow: hidden;
+  }
+  [c3] {
+    width: 150px;
+    height: 150px;
+    left: 50%;
+    translate: -50%;
+    bottom: 15px;
+  }
+  [c3] div {
+    background: #998235;
+  }
+  [c4] {
+    right: -25px;
+    bottom: -15px;
+  }
+  [c5] {
+    width: 80px;
+    height: 80px;
+    left: 50%;
+    translate: -50%;
+    bottom: 125px;
+  }
+</style>
