@@ -1379,6 +1379,77 @@
             ]
         },
         {
+            "id": 25,
+            "title": "Flex",
+            "targetsnb": "151-158",
+            "targets": [
+                {
+                    "id": 151,
+                    "title": "Pawn",
+                    "achievements": {
+                        "match": "100%",
+                        "score": "600.04 {973}"
+                    }
+                },
+                {
+                    "id": 152,
+                    "title": "Rook",
+                    "achievements": {
+                        "match": "100%",
+                        "score": "600 {1692}"
+                    }
+                },
+                {
+                    "id": 153,
+                    "title": "-",
+                    "achievements": {
+                        "match": "-%",
+                        "score": "-"
+                    }
+                },
+                {
+                    "id": 154,
+                    "title": "-",
+                    "achievements": {
+                        "match": "-%",
+                        "score": "-"
+                    }
+                },
+                {
+                    "id": 155,
+                    "title": "-",
+                    "achievements": {
+                        "match": "-%",
+                        "score": "-"
+                    }
+                },
+                {
+                    "id": 156,
+                    "title": "-",
+                    "achievements": {
+                        "match": "-%",
+                        "score": "-"
+                    }
+                },
+                {
+                    "id": 157,
+                    "title": "-",
+                    "achievements": {
+                        "match": "-%",
+                        "score": "-"
+                    }
+                },
+                {
+                    "id": 158,
+                    "title": "-",
+                    "achievements": {
+                        "match": "-%",
+                        "score": "-"
+                    }
+                }
+            ]
+        },
+        {
             "id": "TA-1",
             "title": "Time Attack #1",
             "targetsnb": "TA1-TA4",

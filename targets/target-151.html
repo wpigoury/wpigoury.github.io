@@ -1,0 +1,60 @@
+<div c></div>
+<div b></div>
+<div bt></div>
+<div t></div>
+<style>
+  body {
+    background: #F5D6B4;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div {
+    position: absolute;
+    background: #D86F45;
+  }
+  [b] {
+    width: 140px;
+    height: 40px;
+    border-radius: 20px 20px 10px 10px;
+    top: 205px;
+  }
+  [bt] {
+    width: 80px;
+    height: 20px;
+    border-radius: 10px 10px 20px 20px;
+    top: 110px;
+  }
+  [t] {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: 55px;
+  }
+  [c] {
+    width: 90px;
+    height: 65px;
+    top: 135px;
+  }
+  [c]:before {
+    content: '';
+    position: absolute;
+    background: #F5D6B4;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    top: -65px;
+    right: 65px;
+  }
+  [c]:after {
+    content: '';
+    position: absolute;
+    background: #F5D6B4;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    top: -65px;
+    left: 65px;
+  }
+</style>
