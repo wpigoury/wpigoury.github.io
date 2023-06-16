@@ -55,7 +55,7 @@ const selectTargetsEvent = (e) => {
         ? currentTarget.url
         : targetBaseUrl.replace("#", id);
     targetTitle = e.target.selectedOptions[0].innerText;
-    fetchTarget(id).then((html) => {
+    fetchTarget(id.toLowerCase()).then((html) => {
         displayTarget(id.toLowerCase(), html);
     });
 };
