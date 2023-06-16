@@ -1,0 +1,35 @@
+<div c></div>
+<div d></div>
+<style>
+  body {
+    background: #E3516E;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div {
+    position: absolute;
+  }
+  [c] {
+    width: 200px;
+    height: 200px;
+    background: repeating-conic-gradient(#FADE8B 0% 25%, transparent 0% 50%) 40px 80px / 80px 80px
+  }
+  [d] {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #FADE8B;
+    top: 100px;
+    box-shadow: 80px 0 0 #FADE8B,
+                -80px 0 0 #FADE8B,
+                40px -40px #FADE8B,
+                -40px -40px #FADE8B,
+                0px 80px #FADE8B,
+                -80px 80px #FADE8B,
+                80px 80px #FADE8B,
+                40px 120px #FADE8B,
+                -40px 120px #FADE8B
+  }
+</style>

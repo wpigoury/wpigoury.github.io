@@ -56,7 +56,7 @@ const selectTargetsEvent = (e) => {
         : targetBaseUrl.replace("#", id);
     targetTitle = e.target.selectedOptions[0].innerText;
     fetchTarget(id).then((html) => {
-        displayTarget(id, html);
+        displayTarget(id.toLowerCase(), html);
     });
 };
 
