@@ -1430,34 +1430,34 @@
                 },
                 {
                     "id": 155,
-                    "title": "-",
+                    "title": "🐍 & 🪜",
                     "achievements": {
-                        "match": "-%",
-                        "score": "-"
+                        "match": "100%",
+                        "score": "603.78 {489}"
                     }
                 },
                 {
                     "id": 156,
-                    "title": "-",
+                    "title": "Chinese Checkers",
                     "achievements": {
-                        "match": "-%",
-                        "score": "-"
+                        "match": "100%",
+                        "score": "600 {1509}"
                     }
                 },
                 {
                     "id": 157,
-                    "title": "-",
+                    "title": "Monopoly",
                     "achievements": {
-                        "match": "-%",
-                        "score": "-"
+                        "match": "100%",
+                        "score": "600.03 {986}"
                     }
                 },
                 {
                     "id": 158,
-                    "title": "-",
+                    "title": "Clubs",
                     "achievements": {
-                        "match": "-%",
-                        "score": "-"
+                        "match": "100%",
+                        "score": "600.9 {640}"
                     }
                 }
             ]
